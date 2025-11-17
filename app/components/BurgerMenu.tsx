@@ -17,6 +17,7 @@ const BurgerMenu = () => {
   const pathname = usePathname();
 
   useEffect(() => {
+    if (!pathname) return;
     setIsOpen(false);
   }, [pathname]);
 
